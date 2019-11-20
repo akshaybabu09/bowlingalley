@@ -47,11 +47,13 @@ python3 bowling_alley.py
 
 Once you run the above command you will be asked a few questions.
 1. Do you wish to add a new strategies? Please respond with a **Yes** or a **No**
+    
     If **Yes**
+    
         You will be asked the following:
-        a. The number of strategies you want to add.
-        b. The condition for the strategy.
-        c. The bonus value.
+        - The number of strategies you want to add.
+        - The condition for the strategy.
+        - The bonus value.
         
 ![include_strategy](https://user-images.githubusercontent.com/45592052/69254938-f9ce9f00-0bdc-11ea-9ed0-d0c295eaa07a.png)
     
