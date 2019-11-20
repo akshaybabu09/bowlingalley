@@ -5,7 +5,7 @@ from strategies import Strategies
 class Game:
 
     @staticmethod
-    def bowling_game(pid):
+    def individual_bowling_game(pid):
 
         min_value = 0
         total_sets = 10

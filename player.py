@@ -26,7 +26,7 @@ class Player:
         players = Player.players
 
         for player in players:
-            Game.bowling_game(players[player]['pid'])
+            Game.individual_bowling_game(players[player]['pid'])
 
     @staticmethod
     def calculate_final_score(pid):
@@ -48,6 +48,7 @@ class Player:
         print("\nWinner is {}".format(winner_name))
         view_details = input("\nDo you want to view score details of each player? (Answer with a Yes or a No)\n")
         if view_details.lower() == 'yes':
+            print("\n")
             Player.display_detailed_score()
 
     @staticmethod
@@ -64,14 +65,15 @@ class Player:
         players = Player.players
         for player in players:
             player_set_data = players[player]['game_scores']
+            print("Player Name: {}".format(players[player]['name']))
             count = 0
             for set_data in player_set_data:
                 count += 1
-                Player.print_set_data(count, len(player_set_data), set_data)
+                Player.display_set_data(count, len(player_set_data), set_data)
             print("Final Score: {}\n".format(players[player]['game_score']))
 
     @staticmethod
-    def print_set_data(game_set, total_sets, set_data):
+    def display_set_data(game_set, total_sets, set_data):
         print("Set {}:\n".format(game_set))
         trial_1 = set_data.get('trial_1')
         trial_2 = set_data.get('trial_2')

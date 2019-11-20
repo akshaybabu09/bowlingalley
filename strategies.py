@@ -1,3 +1,5 @@
+
+
 class Strategies:
 
     strategies = {
@@ -32,8 +34,12 @@ class Strategies:
     @staticmethod
     def add_strategy(num_of_strategy):
         for i in range(num_of_strategy):
+            print("\n")
             name = input("Enter the name of strategy: ")
             condition = input("Enter the condition for the strategy: \nExample: trial_1 + trial_2 == 10\n")
             bonus_value = int(input("Enter the value of bonus: "))
             Strategies(name, condition, bonus_value)
-        print(Strategies.strategies)
+
+    @staticmethod
+    def display_strategies():
+        print("\nStrategies for this game:\n", Strategies.strategies)

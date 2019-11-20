@@ -12,6 +12,7 @@ class BowlingAlley:
             num_of_strategy = int(input("Number of strategies you want to add:"))
             if num_of_strategy != 0:
                 Strategies.add_strategy(num_of_strategy)
+        Strategies.display_strategies()
 
         player_count = int(input("Enter number of Players: "))
         print("\n")
