@@ -2,13 +2,12 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="dd2991a9-505c-449d-9394-7ac2d436f505" name="Default Changelist" comment="">
+      <change afterPath="$PROJECT_DIR$/lane.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/bowling_alley.py" beforeDir="false" afterPath="$PROJECT_DIR$/bowling_alley.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/individual_game.py" beforeDir="false" afterPath="$PROJECT_DIR$/individual_game.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/player.py" beforeDir="false" afterPath="$PROJECT_DIR$/player.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/strategies.py" beforeDir="false" afterPath="$PROJECT_DIR$/strategies.py" afterDir="false" />
     </list>
-    <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -28,18 +27,6 @@
   <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
   <component name="PropertiesComponent">
     <property name="last_opened_file_path" value="$PROJECT_DIR$" />
-  </component>
-  <component name="RunDashboard">
-    <option name="ruleStates">
-      <list>
-        <RuleState>
-          <option name="name" value="ConfigurationTypeDashboardGroupingRule" />
-        </RuleState>
-        <RuleState>
-          <option name="name" value="StatusDashboardGroupingRule" />
-        </RuleState>
-      </list>
-    </option>
   </component>
   <component name="RunManager">
     <configuration name="bowling_alley" type="PythonConfigurationType" factoryName="Python" temporary="true">
@@ -69,6 +56,18 @@
       </list>
     </recent_temporary>
   </component>
+  <component name="ServiceViewManager">
+    <option name="viewStates">
+      <list>
+        <serviceView>
+          <treeState>
+            <expand />
+            <select />
+          </treeState>
+        </serviceView>
+      </list>
+    </option>
+  </component>
   <component name="SvnConfiguration">
     <configuration />
   </component>
@@ -87,10 +86,30 @@
       <map>
         <entry key="MAIN">
           <value>
-            <State />
+            <State>
+              <option name="COLUMN_ORDER" />
+            </State>
           </value>
         </entry>
       </map>
     </option>
+  </component>
+  <component name="WindowStateProjectService">
+    <state width="1835" height="262" key="GridCell.Tab.0.bottom" timestamp="1575543850814">
+      <screen x="57" y="34" width="1863" height="1046" />
+    </state>
+    <state width="1835" height="262" key="GridCell.Tab.0.bottom/57.34.1863.1046@57.34.1863.1046" timestamp="1575543850814" />
+    <state width="1835" height="262" key="GridCell.Tab.0.center" timestamp="1575543850814">
+      <screen x="57" y="34" width="1863" height="1046" />
+    </state>
+    <state width="1835" height="262" key="GridCell.Tab.0.center/57.34.1863.1046@57.34.1863.1046" timestamp="1575543850814" />
+    <state width="1835" height="262" key="GridCell.Tab.0.left" timestamp="1575543850814">
+      <screen x="57" y="34" width="1863" height="1046" />
+    </state>
+    <state width="1835" height="262" key="GridCell.Tab.0.left/57.34.1863.1046@57.34.1863.1046" timestamp="1575543850814" />
+    <state width="1835" height="262" key="GridCell.Tab.0.right" timestamp="1575543850814">
+      <screen x="57" y="34" width="1863" height="1046" />
+    </state>
+    <state width="1835" height="262" key="GridCell.Tab.0.right/57.34.1863.1046@57.34.1863.1046" timestamp="1575543850814" />
   </component>
 </project>

@@ -38,8 +38,9 @@ class Player:
         players[pid]['game_score'] = total_score
 
     @staticmethod
-    def display_player_details():
+    def display_player_details(lane):
         players = Player.players
+        print("The Result of Game at Lane {} is as follows:".format(lane))
         for player in players:
             print("Id: {}, Name: {}, Score: {}".format(
                 players[player]['pid'], players[player]['name'], players[player]['game_score'])
@@ -74,6 +75,7 @@ class Player:
 
     @staticmethod
     def display_set_data(game_set, total_sets, set_data):
+        pins = 10
         print("Set {}:\n".format(game_set))
         trial_1 = set_data.get('trial_1')
         trial_2 = set_data.get('trial_2')
@@ -82,7 +84,7 @@ class Player:
         print("Trial 1: {}".format(trial_1))
         if trial_1 != 10:
             print("Trial 2: {}".format(trial_2))
-        if game_set == total_sets and (trial_1 == 10 or (trial_1 + trial_2) == 10):
+        if game_set == total_sets and (trial_1 == pins or (trial_1 + trial_2) == pins):
             print("Trial 3: {}".format(trial_3))
         print("Set outcome: {} \n".format(set_data.get('set_total_score')))
 

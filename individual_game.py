@@ -10,20 +10,21 @@ class Game:
         min_value = 0
         total_sets = 10
         trial_3 = 0
+        pins = 10
         game_scores = []
         for game_set in range(total_sets):
             if game_set == total_sets - 1:
-                trial_1, trial_2, trial_3 = Game.set_score(min_value, total_sets, game_set)
+                trial_1, trial_2, trial_3 = Game.set_score(min_value, total_sets, game_set, pins)
                 score = trial_1 + trial_2 + trial_3
             else:
-                trial_1, trial_2 = Game.set_score(min_value, total_sets, game_set)
+                trial_1, trial_2 = Game.set_score(min_value, total_sets, game_set, pins)
                 score = trial_1 + trial_2
 
             bonus = Strategies.run_strategy(trial_1, trial_2)
 
             set_total_score = score + bonus
 
-            if game_set == (total_sets - 1) and (trial_1 == 10 or (trial_1 + trial_2) == 10):
+            if game_set == (total_sets - 1) and (trial_1 == pins or (trial_1 + trial_2) == pins):
                 trial_scores = Game.three_trail_set(trial_1, trial_2, trial_3, set_total_score)
             else:
                 trial_scores = Game.two_trail_set(trial_1, trial_2, set_total_score)
@@ -33,14 +34,14 @@ class Game:
         Player.calculate_final_score(pid)
 
     @staticmethod
-    def set_score(min_value, total_sets, game_set):
+    def set_score(min_value, total_sets, game_set, pins):
         trial_1 = Game.generator(total_sets, min_value)
         trial_3 = 0
 
         trial_2 = Game.generator(total_sets, trial_1)
 
         if game_set == (total_sets - 1):
-            if (trial_1 == 10) or ((trial_1 + trial_2) == 10):
+            if (trial_1 == pins) or ((trial_1 + trial_2) == pins):
                 trial_3 = Game.generator(total_sets, min_value)
             return trial_1, trial_2, trial_3
 

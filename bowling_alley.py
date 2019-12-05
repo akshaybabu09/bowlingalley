@@ -1,5 +1,5 @@
-from player import Player
 from strategies import Strategies
+from lane import Lane
 
 
 class BowlingAlley:
@@ -14,12 +14,9 @@ class BowlingAlley:
                 Strategies.add_strategy(num_of_strategy)
         Strategies.display_strategies()
 
-        player_count = int(input("Enter number of Players: "))
-        print("\n")
-
-        Player.fetch_player_details(player_count)
-        Player.player_game()
-        Player.display_player_details()
+        lanes = int(input("\nEnter the number of lanes: "))
+        Lane.lanes = lanes
+        Lane.start_game_lane()
 
 
 BowlingAlley.bowling_game()
